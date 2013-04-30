@@ -1,0 +1,10 @@
+
+
+Simple Compile:
+g++ 1_load_image.cpp -I /opt/local/include/ -L /opt/local/lib -lm -lopencv_core -lopencv_highgui
+
+Simple Run:
+./a stuff.jpg
+
+<< Better Method To Compile >> 
+g++ `pkg-config --cflags --libs opencv` 2_erode_image.cpp -o opencv
